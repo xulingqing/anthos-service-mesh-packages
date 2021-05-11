@@ -21,3 +21,6 @@ spec:
       multiCluster:
         # Provided to ensure a human readable name rather than a UUID.
         clusterName: "cn-PROJECTID-us-central1-c-asm-cluster" # {"$ref":"#/definitions/io.k8s.cli.substitutions.cluster-name"}
+      network: "NETWORK_ID" # {"$ref":"#/definitions/io.k8s.cli.setters.gcloud.compute.network"}
+  meshConfig:
+    accessLogFile: "/dev/stdout"

@@ -17,6 +17,9 @@ apiVersion: install.istio.io/v1alpha1
 kind: IstioOperator
 spec:
   values:
+    pilot:
+      env:
+        PILOT_ENABLE_CROSS_CLUSTER_WORKLOAD_ENTRY: true
     telemetry:
       enabled: true
       v2:
